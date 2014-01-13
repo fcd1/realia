@@ -1,0 +1,415 @@
+@import url('reset.css');
+/* kuler.adobe.com > rockefeller palette */
+
+
+body {font: 12px Verdana, Arial, sans-serif; color:#555; background:#444; }
+
+#headNav {
+	background-color:#2d2a62;
+	color:#fff;
+	border-bottom:1px solid #eee;
+	margin-bottom:5px;
+}
+A.topNavbarLink:link, A.topNavbarLink:hover, A.topNavbarLink:visited, A.topNavbarLink:visited:hover   {
+	color:#fff;
+	text-decoration:none;
+	font-size:11px;
+}
+#omeka-logo {
+	text-decoration:none;
+}
+h1, h2, h3, h4, h5 {color:#77403e; padding:8px 0 5px 0;}
+h1.head {font-family:"Trebuchet MS"; font-size:22px;padding:10px;background-color:#000;border-bottom:5px solid #ccc; color:#fff;}
+h1 {font-family:"Trebuchet MS"; font-size:22px;color:#77403e;}
+h1.head A { color:#fff; }
+h2 {font-size:2em; color: #77403e; /*margin-bottom:1.25em; line-height:1.125em;*/}
+h3 {font-size:1em; font-weight:bold;padding-top:15px; /*margin-bottom:1.2857em; line-height:1.2857em;clear: both;*/}
+h5 {float: right;padding:1em 1em;}
+
+a img {border:none;}
+p,ul,ol,dl {font-size:1em; margin-bottom:1.5em;/*line-height:1.8em;*/}
+.exhibit-text ul { list-style-type: circle; padding-left:15px;}
+.exhibit-text ol { list-style-type: decimal; padding-left:15px;}
+.exhibit-text ul li, .exhibit-text ol li { padding-bottom:6px; }
+p {padding: 0 18px 0 0;}
+i,em { font-size:1em; font-style:italic; }
+b,strong { font-size:1em; font-weight:bold; }
+
+a:link {color:#77403e; /*003399;*/}
+a:visited {color: #77403e;}
+a:hover {color: #77403e; text-decoration: none;}
+	h1 a, h1 a:visited {text-decoration: none;color:#fff;}
+	h5 a, h5 a:visited {color: #77403e;}
+
+/* == Structure == */
+
+#wrap {width:950px; margin:0px auto; overflow:hidden;background-color:#fff;}
+#header {clear: both;padding:0; margin: 0;overflow: hidden;}
+
+#exhibit-nav {
+	float: left;
+	width: 163px;
+	padding: 0 8px;
+	background:#fff;
+	border-right:1px solid #c7b5a2
+}
+
+#content {
+	float: right;
+	overflow: hidden;
+	min-height:400px;
+	width: 730px;
+	padding:0 18px;
+	/* border-left: 1px solid #c7b5a2; */
+	background:#fff;
+}
+
+#footer {clear: both;padding:0;margin:0;margin-top:5px;color:#fff;background-color:#2d2a62;font-size:11px;min-height:18px;vertical-align:middle; border-top:1px solid #eee;}
+	#footer a {color: #fff;}
+	#footer a:visited {color: #fff;}
+		
+/* =Exhibit Navigation= */	
+.exhibit-section-nav {width: 164px;overflow:hidden; }
+	.exhibit-section-nav li {width:auto;list-style-type:none;display:block;}
+	.exhibit-section-nav li a {display:block;text-decoration:none;padding:.5em;border-bottom: 1px solid #fff;border-top: 1px solid #fff;}
+	.exhibit-section-nav li.current a, .exhibit-section-nav li.current a:visited {
+		/*color: #77403e;
+		border-bottom: 1px solid #77403e;
+		border-top: 1px solid #77403e;
+		background-color:#dbcab1;
+		font-weight:bold;
+		*/
+	}
+	.exhibit-section-nav li a:hover {text-decoration:underline;color: #77403e;/*border-bottom: 1px solid #77403e;border-top: 1px solid #77403e;background-color:#dbcab1;*/}
+	
+/* =Page Navigation= */
+        .exhibit-nested-section, .exhibit-page-nav {list-style-type:none;width:100%;padding:0px;margin:0;/*margin-top:-12px;/*background:#dbcab1;border-top: 1px solid #fff;border:1px solid #77403e; border-top:0px*/}
+/* fcd1, 8/30/13: added .exhibit-child-nav */
+.exhibit-page-nav li,
+.exhibit-child-nav li {
+    display:block;
+    margin-top:0px;
+    margin-left:1.5em;
+    text-align: left;
+    padding-bottom:6px;
+}
+	.exhibit-page-nav li a {text-decoration:none;}
+	.exhibit-page-nav li a:hover {text-decoration:underline;}
+/* fcd1, 8/30/13: added .exhibit-child-nav */
+.exhibit-page-nav li.current,
+.exhibit-page-nav li.current a,
+.exhibit-page-nav li.current a:visited, 
+.exhibit-child-nav li.current,
+.exhibit-child-nav li.current a,
+.exhibit-child-nav li.current a:visited  {
+    color: #77403e;
+    text-decoration:underline;
+}
+	.exhibit-page-nav li.current a:hover, .exhibit-page-nav li.current a:visited:hover { color:#77403e; text-decoration:underline;}
+
+/* == Content == */
+#exhibit-sections h3 {margin: 0 0 .5em; font-weight:bold;font-size: 1.2em; //text-transform: uppercase; 
+	letter-spacing: .1em;}
+	#exhibit-sections h3 a,#exhibit-sections h3 a:visited {text-decoration: none;color: #77403e;}
+	#exhibit-sections h3 a:hover {color: #dbcab1;}
+#exhibit-sections p {margin: 0 0 1.8em; padding: 0 18px 0 0;}
+	
+.commentary {background:#eee; padding:18px;}
+	.commentary p {font-size:1.1em; line-height:1.63636;}
+	
+/* == Layout == */
+.gallery-full-left,
+.gallery-full-right,
+.gallery-thumbnails,
+.gallery-thumbnails-text-bottom,
+.gallery-thumbnails-text-top,
+.image-list-left,
+.image-list-left-thumbs,
+.image-list-right,
+.image-list-right-thumbs,
+.text-full,
+.text-image-left,
+.text-image-right
+	{clear: both;}
+
+.gallery-thumbnails .exhibit-item,
+.gallery-thumbnails-text-bottom .exhibit-item,
+.gallery-thumbnails-text-top .exhibit-item {
+	text-align:center;
+}
+
+/*
+.item img, .exhibit-item img {margin-bottom: 1.5em;}
+
+.image-list-left .exhibit-item, .image-list-right .exhibit-item {
+	margin-top:10px;
+	border-bottom:1px solid #eee;
+}
+*/
+
+/* LAYOUT: GALLERY-THUMBNAILS (ALL) */
+.gallery-thumbnails .exhibit-item,
+.gallery-thumbnails-text-bottom .exhibit-item,
+.gallery-thumbnails-text-top .exhibit-item {
+        text-align:center;
+        width:auto;
+/* fcd1, 9/13/13: removed float, it was messing up thumbnail layout 
+        float:left; */
+        padding:10px;
+}
+.gallery-thumbnails-text-bottom .exhibit-text, .gallery-thumbnails-text-top .exhibit-text {
+        clear:both;
+        float:left;
+}
+
+/* LAYOUT: GALLERY-FULL-LEFT AND LAYOUT: GALLERY-FULL-RIGHT */
+.gallery-full-left .primary {
+        float:left;
+        width:300px;
+        padding:1em;
+}
+.gallery-full-left .primary IMG {
+        width:300px;
+}
+.gallery-full-left .secondary {
+        padding:1em;
+}
+
+.gallery-full-right .primary {
+        float:right;
+        width:300px;
+        padding:1em;
+}
+.gallery-full-right .primary IMG {
+        width:300px;
+}
+.gallery-full-right .secondary {
+        padding:1em;
+}
+/* LAYOUT: TEXT-IMAGE-LEFT AND LAYOTU: TEXT-IMAGE-RIGHT */
+.text-image-left IMG {
+        width:48%;
+        float:left;
+        padding:1em;
+}
+
+.text-image-right IMG {
+        width:48%;
+        float:right;
+        padding:1em;
+}
+/* LAYOUT: IMAGE-LIST-LEFT AND LAYOUT: IMAGE-LIST-RIGHT */
+.image-list-left .image-text-group, .image-list-right .image-text-group {
+        width:auto;
+}
+.image-list-left IMG.full  {
+        width:400px;
+        height:auto;
+        float:left;
+}
+
+.image-list-left .exhibit-text  {
+        width:300px;
+        height:auto;
+        float:right;
+}
+
+.image-list-right IMG.full {
+        width:400px;
+        height:auto;
+        float:right;
+}
+.image-list-right .exhibit-text  {
+        width:300px;
+        height:auto;
+        float:left;
+}
+.image-list-left .exhibit-item, .image-list-right .exhibit-item {
+        margin-top:10px;
+        /*border-bottom:1px solid #eee;*/
+}
+/* generic */
+.image-text-group {
+        clear:both;
+        border-bottom:1px solid #eee;
+}
+
+/* LAYOUT: IMAGE-LIST-LEFT-THUMBS AND LAYOUT: IMAGE-LIST-RIGHT-THUMBS */
+.image-list-left-thumbs .exhibit-item {
+        float:left;
+        width:200px;
+        padding:5px;
+}
+.image-list-left-thumbs .exhibit-text {
+        float:right;
+        width:400px;
+        padding:5px;
+}
+.image-list-right-thumbs .exhibit-item {
+        float:right;
+        width:200px;
+        padding:5px;
+}
+.image-list-right-thumbs .exhibit-text {
+        float:left;
+        width:400px;
+        padding:5px;
+}
+
+/* generic */
+.item img, .exhibit-item img {margin-bottom: 1.5em;}
+
+#exhibit-page-navigation, .prevNext { clear:both; }
+
+
+
+/* == Item Show == */
+.item-title {padding-left: 0;margin-top: 0;}
+.field {padding-bottom: 1em;}
+.field-value {padding-left: 1.5em;margin-top: 0.75em;}
+.tags {margin-bottom: 1em;}
+#item-files {margin-bottom:1.5em;text-align:center;}
+.item-file {
+	background:#eee;
+	text-align:center;
+	padding:5px;
+	margin-bottom:1.5em;
+}
+
+.footer11px A, .footer11px A:visited { color:#eee; }
+#solidBlock {
+	background-color:#77403E; //#5d6670; #4f474b;
+	width:744px;overflow:hidden;margin-left:-20px;
+	text-align:right;
+}
+#solidBlock h1 {
+	color:#fff;
+	font-family:"Trebuchet MS"; font-size:22px;color:#fff;
+	border:none;
+	background-color:transparent;
+	padding:0;margin:0;
+}
+#solidBlock A {
+	color:#fff;
+}
+#solidBlockSecondary {
+	background-color:#77403e;
+	height:auto;
+}
+
+#primary H1 {
+	font-size:22px; color: #77403e; margin-bottom:1.25em; line-height:1.125em; border-bottom:1px solid #77403e;
+}
+#primary H2 {
+	font-size:1.5em; color: #77403e; margin-bottom:1.25em; line-height:1.125em; font-weight:bold;
+}
+.element-set {
+	/*margin-top:-25px;*/
+}
+.element-set H2 {
+	display:none;
+}
+li.item-title {
+	font-weight:bold; 
+}
+.permalink IMG.full {
+        width:450px;
+        height:auto;
+}
+
+.bigImage {
+        width:450px;
+        padding-left:1px;padding-right:1px;margin:1px;
+        overflow:hidden;
+}
+.bigImage img {
+	width:450px;
+	height:auto;
+}
+DIV.element-text-empty {
+        display:none;
+}
+.prevNext, .prevNext A, .prevNext A:visited {
+	font-size:11px;
+	color:#333;
+	text-align:right;
+	width:100%;
+	padding:5px;
+}
+
+a.home_link {
+    font-weight: bold;
+}
+
+/* fcd1, 9/6/13: item.php stuff */
+#item-page-content td {
+	padding:20px;
+	background-color:#fff;
+}
+
+.item-file a {
+/*	float: right; */
+	top: 0;	
+	margin-right: 50px;
+	margin-left: 5px;
+	padding: 5px;
+	text-align: center;
+/*	background: #eee; */
+	background: #fff;
+	width: 250px;
+}
+
+.item-file {
+	background-color:#fff;
+	margin-bottom:0px;
+}
+
+.item-file img {
+	background: #fff;
+}
+
+a.link-to-item-page  {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 0.75em
+}
+
+#item-files {
+	float:right;
+	margin-right: 50px;
+	margin-left: 5px;
+	padding: 5px;
+	text-align: center;
+	background: #eee;
+	width: 250px;
+}
+
+/* fcd1, 9/26/13: needed to bring images (in highslide window) above CUL widget top navbar */
+/* CUL widget (javascript) uses 1030, so go 1 up */
+div.highslide-container {
+    z-index: 1031 !important;
+}
+
+.copyright-footer, 
+.footer11px {
+    font-size: 11px;
+    width:98%;
+    text-align:center;
+    color:#fff;
+}
+
+p.footer11px {
+    padding-top: 6px;
+}
+
+p.copyright-footer a {
+    color: inherit;
+}
+
+.exhibit-description p {
+    margin-bottom:0px;
+    margin-top:1em;
+}
