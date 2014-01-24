@@ -356,7 +356,7 @@ a.home_link {
 	text-align: center;
 /*	background: #eee; */
 	background: #fff;
-	width: 250px;
+/*	width: 50%; */
 }
 
 .item-file {
@@ -379,12 +379,12 @@ a.link-to-item-page  {
 
 #item-files {
 	float:right;
-	margin-right: 50px;
+	margin-right: 5px; /* fcd1, 01/24/14: changed from 50px to 5px */
 	margin-left: 5px;
 	padding: 5px;
 	text-align: center;
 	background: #eee;
-	width: 250px;
+	width: 50%; /* fcd1, 01/24/14: changed from 250px to 50% */
 }
 
 /* fcd1, 9/26/13: needed to bring images (in highslide window) above CUL widget top navbar */
@@ -412,4 +412,39 @@ p.copyright-footer a {
 .exhibit-description p {
     margin-bottom:0px;
     margin-top:1em;
+}
+
+/* fcd1, 01/23/14: */
+/* following rule applies to display of item.php */
+/* item page reformat */
+.exhibit-item-show .item-file.image-jpeg .full {
+    width: 100%;
+}
+
+/* fcd1, 01/23/14: */
+/* following rule applies to display of item.php */
+/* item page reformat */
+.exhibit-item-show .item-file.image-jpeg a {
+    margin-right: 0px;
+}
+
+/* fcd1, 01/23/14: */
+/* following rule applies to display of item.php */
+/* item page reformat */
+.exhibit-item-show .element-set h3 {
+    padding: 5px 0 5px 0;
+}
+
+/* fcd1, 01/23/14: */
+/* following rule applies to display of item.php */
+/* item page reformat */
+.exhibit-item-show #primary .item-title {
+    margin-bottom: 2px;
+}
+
+/* fcd1, 01/23/14: */
+/* following rule applies to display of item.php */
+/* item page reformat */
+.exhibit-item-show .item-file {
+    padding: 0px;
 }

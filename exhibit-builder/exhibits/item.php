@@ -18,7 +18,10 @@
 
           <div id="item-files">
             <?php 
-              echo files_for_item(array('imageSize' => 'thumbnail',
+              // fcd1, 01/16/14:
+              // change imageSize from thumbnail (as set in original code)
+              // to fullsize
+              echo files_for_item(array('imageSize' => 'fullsize',
 					'linkAttributes' => array('onclick' => 'return hs.expand(this)',
 								  'class' => 'highslide')
 					)
