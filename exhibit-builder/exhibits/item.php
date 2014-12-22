@@ -53,14 +53,9 @@
 
           <div id="item-files">
             <?php 
-              // fcd1, 01/16/14:
-              // change imageSize from thumbnail (as set in original code)
-              // to fullsize
-              echo files_for_item(array('imageSize' => 'fullsize',
-					'linkAttributes' => array('onclick' => 'return hs.expand(this)',
-								  'class' => 'highslide')
-					)
-				  );
+              // fcd1, 12/19/14: Following is defined in plugins/CulCustomized/CulCustomizePlugin
+              // All this method does is call files_for_item with hard-coded arguments.
+              cul_files_for_item();
             ?>
 
             <div id="item-feedback" class="element" style="padding-left:25px;">
