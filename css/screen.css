@@ -482,10 +482,17 @@ p.copyright-footer a {
 /* START of Changes for move to Omeka 2.2.2 (and ExhibitBuilder 3.1.3) */
 
 .layout-gallery .gallery .exhibit-gallery-item {
-  width: 22%;
+  width: 29%;
   float: left;
-  margin: 3%;
+  margin: 2%;
+  min-height: 240px;
+}
+
+.layout-gallery .gallery .exhibit-gallery-item a.exhibit-item-link {
+  display: block;
+  text-align: center;
 }
 
 /* fcd1, Feb 1015 */
 /* END of Changes for move to Omeka 2.2.2 (and ExhibitBuilder 3.1.3) */
+
