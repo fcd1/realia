@@ -51,6 +51,9 @@
     <div id="wrap">
       <h1 class="head"><span style="color:#fff;height:30px;min-width:30px;background-color:#77403E;display:inline">&nbsp;</span>&nbsp;
         <?php
+	$exhibit = get_current_record('exhibit', false);
+        if ($exhibit) {
           echo metadata('exhibit','title');
+	}
         ?>
       </h1>
