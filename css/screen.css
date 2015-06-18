@@ -486,6 +486,7 @@ p.copyright-footer a {
   float: left;
   margin: 2%;
   min-height: 240px;
+  text-align: center;
 }
 
 .layout-gallery .gallery .exhibit-gallery-item a.exhibit-item-link {
