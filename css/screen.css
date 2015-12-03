@@ -43,7 +43,12 @@ a:hover {color: #77403e; text-decoration: none;}
 
 /* == Structure == */
 
-#wrap {width:950px; margin:0px auto; overflow:hidden;background-color:#fff;}
+#wrap {
+	width:1190px;
+	margin:0px auto;
+	overflow:hidden;
+	background-color:#fff;
+}
 #header {clear: both;padding:0; margin: 0;overflow: hidden;}
 
 #exhibit-nav {
@@ -58,7 +63,7 @@ a:hover {color: #77403e; text-decoration: none;}
 	float: right;
 	overflow: hidden;
 	min-height:400px;
-	width: 730px;
+	width: 970px;
 	padding:0 18px;
 	/* border-left: 1px solid #c7b5a2; */
 	background:#fff;
@@ -279,7 +284,8 @@ a:hover {color: #77403e; text-decoration: none;}
 .footer11px A, .footer11px A:visited { color:#eee; }
 #solidBlock {
 	background-color:#77403E; //#5d6670; #4f474b;
-	width:744px;overflow:hidden;margin-left:-20px;
+	width:970px;
+	overflow:hidden;
 	text-align:right;
 }
 #solidBlock h1 {
@@ -287,7 +293,8 @@ a:hover {color: #77403e; text-decoration: none;}
 	font-family:"Trebuchet MS"; font-size:22px;color:#fff;
 	border:none;
 	background-color:transparent;
-	padding:0;margin:0;
+	padding:0;
+	margin-left: 7em;
 }
 #solidBlock A {
 	color:#fff;

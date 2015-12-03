@@ -28,7 +28,7 @@
         <div id="solidBlock">
           <table style="border-collapse:collapse">
             <tr>
-              <td style="border-right:5px solid #fff;vertical-align:middle;padding:10px;width:380px">
+              <td style="border-right:5px solid #fff;vertical-align:middle;padding:10px;width:575px">
                 <h1>
                   <span style="text-transform:none;font-size:24px">
                     <?php echo metadata('exhibit','title'); ?>
